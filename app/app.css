@@ -1,15 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-title: "Bebas Neue", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-ubu: "Ubuntu", sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --color-frist: #1F3044;
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  background-color: white;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+/* Custom Colors */
+.bg-frist {
+  background-color: #1F3044;
+}
+
+.text-frist {
+  color: #1F3044;
+}
+
+.border-frist {
+  border-color: #1F3044;
 }
