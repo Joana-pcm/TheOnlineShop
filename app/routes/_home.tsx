@@ -68,7 +68,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Header */}
-      <header className="border-b border-frist">
+      <header className="sticky top-0 z-50 border-b border-frist bg-white">
         <div className="max-w-7xl px-4 py-4 mx-auto">
           <div className="flex justify-between items-center gap-6">
             <a href="/">
@@ -88,7 +88,7 @@ export default function Home() {
               <Link to="/search">
               <button className="hover:cursor-pointer hover:scale-110 transition ease-in-out duration-150">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#1F3044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#1F3044" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
               </Link>
@@ -96,7 +96,7 @@ export default function Home() {
               <Link to="/user">
               <button className="hover:cursor-pointer hover:scale-110 transition ease-in-out duration-150">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="#1F3044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="#1F3044" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
               </Link>
@@ -104,7 +104,7 @@ export default function Home() {
               <Link to="/cart">
                 <button className="hover:cursor-pointer  hover:scale-110 transition ease-in-out duration-150">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.48 2.64C18.304 2.40533 18.216 2.288 18.1045 2.20338C18.0057 2.12842 17.8938 2.0725 17.7746 2.03845C17.64 2 17.4933 2 17.2 2H6.8C6.50667 2 6.36 2 6.22539 2.03845C6.10616 2.0725 5.9943 2.12842 5.89552 2.20338C5.784 2.288 5.696 2.40533 5.52 2.64L3.96 4.72C3.65102 5.13198 3.49652 5.33797 3.50011 5.51039C3.50323 5.66044 3.57358 5.80115 3.69175 5.89368C3.82754 6 4.08503 6 4.6 6H19.4C19.915 6 20.1725 6 20.3083 5.89368C20.4264 5.80115 20.4968 5.66044 20.4999 5.51039C20.5035 5.33797 20.349 5.13198 20.04 4.72L18.48 2.64ZM5.52 2.64L3.64 5.14666C3.40254 5.46328 3.28381 5.62159 3.1995 5.79592C3.12469 5.95062 3.07012 6.11431 3.03715 6.28296C3 6.47301 3 6.6709 3 7.06666L3 18.8C3 19.9201 3 20.4802 3.21799 20.908C3.40973 21.2843 3.71569 21.5903 4.09202 21.782C4.51984 22 5.07989 22 6.2 22L17.8 22C18.9201 22 19.4802 22 19.908 21.782C20.2843 21.5903 20.5903 21.2843 20.782 20.908C21 20.4802 21 19.9201 21 18.8V7.06667C21 6.6709 21 6.47301 20.9628 6.28296C20.9299 6.11431 20.8753 5.95062 20.8005 5.79592C20.7162 5.62159 20.5975 5.46328 20.36 5.14667L18.48 2.64M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="#1F3044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.48 2.64C18.304 2.40533 18.216 2.288 18.1045 2.20338C18.0057 2.12842 17.8938 2.0725 17.7746 2.03845C17.64 2 17.4933 2 17.2 2H6.8C6.50667 2 6.36 2 6.22539 2.03845C6.10616 2.0725 5.9943 2.12842 5.89552 2.20338C5.784 2.288 5.696 2.40533 5.52 2.64L3.96 4.72C3.65102 5.13198 3.49652 5.33797 3.50011 5.51039C3.50323 5.66044 3.57358 5.80115 3.69175 5.89368C3.82754 6 4.08503 6 4.6 6H19.4C19.915 6 20.1725 6 20.3083 5.89368C20.4264 5.80115 20.4968 5.66044 20.4999 5.51039C20.5035 5.33797 20.349 5.13198 20.04 4.72L18.48 2.64ZM5.52 2.64L3.64 5.14666C3.40254 5.46328 3.28381 5.62159 3.1995 5.79592C3.12469 5.95062 3.07012 6.11431 3.03715 6.28296C3 6.47301 3 6.6709 3 7.06666L3 18.8C3 19.9201 3 20.4802 3.21799 20.908C3.40973 21.2843 3.71569 21.5903 4.09202 21.782C4.51984 22 5.07989 22 6.2 22L17.8 22C18.9201 22 19.4802 22 19.908 21.782C20.2843 21.5903 20.5903 21.2843 20.782 20.908C21 20.4802 21 19.9201 21 18.8V7.06667C21 6.6709 21 6.47301 20.9628 6.28296C20.9299 6.11431 20.8753 5.95062 20.8005 5.79592C20.7162 5.62159 20.5975 5.46328 20.36 5.14667L18.48 2.64M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="#1F3044" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </button>
               </Link>
@@ -114,7 +114,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="max-w-7xl mx-auto px-4 pt-4 pb-8">
         
         <div className="flex gap-4 md:gap-8 flex-col md:flex-row-reverse">
           {/* Mobile Categories Dropdown */}
@@ -125,7 +125,7 @@ export default function Home() {
             >
               <span className="font-sans">Categories</span>
               <span className={`transition-transform duration-300 ease-in-out ${showCategories ? 'rotate-180' : ''}`}><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 9L12 15L18 9" stroke="#1F3044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 9L12 15L18 9" stroke="#1F3044" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 </span>
             </button>
@@ -191,7 +191,7 @@ export default function Home() {
                   <span className="font-sans">{selectedSort ? selectedSort.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : 'Sort By'}</span>
                   <span className={`transition-transform duration-300 ${showSort ? 'rotate-180' : ''}`}>
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#1F3044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 9L12 15L18 9" stroke="#1F3044" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </span>
                 </button>
@@ -260,7 +260,7 @@ export default function Home() {
               {page > 1 && (
                 <a href={`?${category ? `category=${category}&` : ""}sort=${sort}&page=${page - 1}`} className="px-3 py-1 text-frist rounded-md hover:bg-gray-100">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 18L9 12L15 6" stroke="#1F3044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 18L9 12L15 6" stroke="#1F3044" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
                 </a>
@@ -284,7 +284,7 @@ export default function Home() {
               {page < totalPages && (
                 <a href={`?${category ? `category=${category}&` : ""}sort=${sort}&page=${page + 1}`} className="px-3 py-1 text-frist rounded-md transition ease-in-out duration-300 hover:bg-gray-200">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 18L15 12L9 6" stroke="#1F3044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 18L15 12L9 6" stroke="#1F3044" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
                 </a>
               )}
