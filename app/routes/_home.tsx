@@ -121,7 +121,7 @@ export default function Home() {
           <div className="md:hidden mb-6 ml-2 mr-2">
             <button 
               onClick={() => setShowCategories(!showCategories)}
-              className="w-full px-3 py-2 border border-frist rounded-md text-frist font-sans font-xs flex justify-between items-center"
+              className="w-full px-3 py-2 border border-frist rounded-md text-frist font-sans flex justify-between items-center"
             >
               <span className="font-sans">Categories</span>
               <span className={`transition-transform duration-300 ease-in-out ${showCategories ? 'rotate-180' : ''}`}><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +141,7 @@ export default function Home() {
                   <button
                     key={cat.slug}
                     onClick={() => window.location.href = `/?category=${cat.slug}&page=1`}
-                    className="w-full text-left px-3 py-2 text-frist hover:bg-gray-100 rounded capitalize text-xs font-sans"
+                    className="w-full text-left px-3 py-2 text-frist hover:bg-gray-100 rounded capitalize font-sans"
                   >
                     {cat.name}
                   </button>
@@ -171,7 +171,7 @@ export default function Home() {
                       checked={selectedCategory === cat.slug}
                       onChange={() => window.location.href = `/?category=${cat.slug}&page=1`}
                     />
-                    <span className="capitalize font-xs">{cat.name}</span>
+                    <span className="capitalize">{cat.name}</span>
                   </label>
                 ))}
               </div>
@@ -186,7 +186,7 @@ export default function Home() {
               <div className="flex-shrink-0 w-full sm:w-48 relative">
                 <button 
                   onClick={() => setShowSort(!showSort)}
-                  className="w-full px-3 py-2 border border-frist rounded-md text-frist font-sans font-xs flex justify-between items-center"
+                  className="w-full px-3 py-2 border border-frist rounded-md text-frist font-sans flex justify-between items-center"
                 >
                   <span className="font-sans">{selectedSort ? selectedSort.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : 'Sort By'}</span>
                   <span className={`transition-transform duration-300 ${showSort ? 'rotate-180' : ''}`}>
@@ -227,7 +227,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="text-frist text-gray-600 flex items-center gap-2 text-sm font-sans">
+              <div className="text-frist text-gray-600 flex items-center gap-2 font-sans">
               Showing {(page - 1) * pageSize + 1}-{Math.min(page * pageSize, total)} of {total}
               </div>
           </div>
