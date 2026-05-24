@@ -74,7 +74,6 @@ app/
 - **Mobile Categories Dropdown**: On small devices, categories appear as a styled dropdown matching the sort dropdown
 - **Cart Management**: Uses localStorage (client-side) to persist cart data
 - **Responsive Grid**: Products arrange in 1 column on mobile, 2 on tablet, 3 on desktop
-- **Smooth Animations**: Dropdown transitions, hover effects, and scroll animations
 
 ## Type Checking
 
